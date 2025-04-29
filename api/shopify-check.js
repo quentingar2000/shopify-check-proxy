@@ -10,7 +10,7 @@ export default async function handler(req, res) {
     const token = process.env.SHOPIFY_ADMIN_TOKEN; // Your Shopify Admin API token
 
     // 1. Récupérer la commande depuis Shopify pour obtenir le customer_id
-    const orderRes = await fetch(`https://${shop}/admin/api/2023-10/orders/${orderId}.json`, {
+    const orderRes = await fetch(`https://${shop}/admin/api/2025-04/orders/${orderId}.json`, {
       headers: {
         'X-Shopify-Access-Token': token,
         'Content-Type': 'application/json'

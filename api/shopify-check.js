@@ -30,7 +30,7 @@ export default async function handler(req, res) {
     }
 
     // 2. Récupérer les infos du client via son ID
-    const customerRes = await fetch(`https://${shop}/admin/api/2023-10/customers/${customerId}.json`, {
+    const customerRes = await fetch(`https://${shop}/admin/api/2025-04/customers/${customerId}.json`, {
       headers: {
         'X-Shopify-Access-Token': token,
         'Content-Type': 'application/json'

@@ -9,7 +9,6 @@ export default async function handler(req, res) {
     const shop = process.env.SHOPIFY_SHOP_DOMAIN;
     const token = process.env.SHOPIFY_ADMIN_TOKEN;
 
-    // Appel de l’API Shopify pour chercher un client via son email
     const url = `https://${shop}/admin/api/2025-04/customers/search.json?query=email:${encodeURIComponent(email)}`;
     const response = await fetch(url, {
       method: 'GET',
